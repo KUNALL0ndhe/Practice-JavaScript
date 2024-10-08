@@ -20,12 +20,27 @@ let bool = null;
 null => object, false 
 */
 
-let score =  NaN
+// let score =  NaN
 
-let convertScore = String(score);
-console.log(convertScore);
-console.log(typeof(convertScore));
+// let convertScore = String(score);
+// console.log(convertScore);
+// console.log(typeof(convertScore));
 
 /*
 everything gets converted to string
+*/
+
+
+//***************************************Increment***********************************************************
+
+let x = 3;
+const y = x++;
+const z = ++x
+
+console.log(x,y,z)
+
+//here output  is 5 ,3, 5
+/*
+++x increment opertaor in prefix is firest incremented and then assigned
+x++ here the value is assigned and then incremented. 
 */

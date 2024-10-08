@@ -44,3 +44,20 @@ console.log(x,y,z)
 ++x increment opertaor in prefix is firest incremented and then assigned
 x++ here the value is assigned and then incremented. 
 */
+
+
+/* Comparision;
+sameDatatype is fine on both side  */
+
+ a = 2 == 2;
+b = 2 > 2;
+c = 2 <= 2;
+console.table([a,b,c]);
+
+
+// above is fine
+// below is not ok, Avoid it;
+
+null > 0;
+null = "1";
+undefined => abc;

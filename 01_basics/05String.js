@@ -8,6 +8,11 @@ let name = "Kunal";
 // console.log(description.indexOf("ld"));
 // console.log(description.charAt(10));
 // console.log(description.split(' '));
-console.log(description.split(" ").map((word) => {
-    return word.charAt(0).toLowerCase() + word.slice(1).toUpperCase()
-}).join(" "))
+// console.log(description.split(" ").map((word) => {
+//     return word.charAt(0).toLowerCase() + word.slice(1).toUpperCase()
+// }).join(" "))
+
+// console.log(description);
+// console.log(description.split(" ").map((word)=>{
+//     return word.charAt(0).toUpperCase() + word.slice(1)
+// }).join(" "));

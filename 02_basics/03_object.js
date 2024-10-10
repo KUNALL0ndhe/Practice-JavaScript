@@ -17,3 +17,11 @@ console.log(Object.values(tinderUSer)); // give all the values in the given obje
 console.log( Object.entries(tinderUSer)); // it merge the key and the value into and array and returns an array of object
 console.log(tinderUSer.hasOwnProperty("view")); // returns boolean , while the propertyKey is provided
 // in the hasOwnProperty it checks whether the key is present or not
+
+
+// ++++++++++++++++++++++++ Onject destructuring ++++++++++++++
+
+// suppose i want to access one key of an object i can destructure it and use it for further usecase
+
+const {isLoggedIn : online, name } = tinderUSer;
+console.log(`is ${name} online ? ${online}`);

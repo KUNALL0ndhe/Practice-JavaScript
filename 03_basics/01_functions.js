@@ -56,3 +56,31 @@ let handleSecondValue = function(anyArray){ // in the defining function ( inside
 
 
 // console.log(handleSecondValue([80,90,100,200]));
+
+// +++++++++++++++++++++++++++++++++++  SCOPE +++++++++++++++++++++++++
+
+// two type of scope 1 block or Lexical scope another is global scope. braces is the scope {}
+
+let outerFunc = function(){
+    let song1 = "ABCD"
+    let innerFunc = function(){
+        let movie = 1
+       return console.log(movie + song1, "inner")
+    };
+    innerFunc()
+    console.log(song1, "outer");
+    
+};
+// outerFunc()// here child element can access the parent element but not vice versa.
+
+if (true) {
+    console.log("hello outer");
+    let a = 10;
+    if(true){
+        let b = 20
+        console.log(`a is ${a} and b is ${b} level 3`);
+    }
+    console.log(`a is ${a} and b is  level 2 `);
+    
+}
+console.log(`a is  and b is  level 1`);

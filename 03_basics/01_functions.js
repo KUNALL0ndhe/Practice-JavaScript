@@ -73,14 +73,16 @@ let outerFunc = function(){
 };
 // outerFunc()// here child element can access the parent element but not vice versa.
 
-if (true) {
-    console.log("hello outer");
-    let a = 10;
-    if(true){
-        let b = 20
-        console.log(`a is ${a} and b is ${b} level 3`);
-    }
-    console.log(`a is ${a} and b is  level 2 `);
+// if (true) {
+//     console.log("hello outer");
+//     let a = 10;
+//     if(true){
+//         let b = 20
+//         console.log(`a is ${a} and b is ${b} level 3`);
+//     }
+//     console.log(`a is ${a} and b is  level 2 `);
     
-}
-console.log(`a is  and b is  level 1`);
+// }
+// console.log(`a is  and b is  level 1`);
+
+ console.log(typeof(+"1" + '2' + "3"));

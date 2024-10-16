@@ -27,3 +27,5 @@ let cart = shoppingCart.reduce( (acc, item) => {
 },0);
 
 console.log(cart);
+
+// done with basics of js

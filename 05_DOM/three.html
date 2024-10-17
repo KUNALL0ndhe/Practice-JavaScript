@@ -11,6 +11,27 @@
     </ul>
 </body>
 <script>
-    
+    const listln = (langName) => {
+        let li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+        console.log(li)
+    };
+
+    listln("Python");
+
+const listlang = (langName) => {
+    let li = document.createElement('li');
+    li.textContent = langName
+    document.querySelector('.language').appendChild(li);
+}
+listlang("Java");
+
+const listlg = (langName)=> {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
+}
+listlg("C++")
 </script>
 </html>

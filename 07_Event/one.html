@@ -20,28 +20,34 @@
 </body>
 
 <script>
-    document.getElementById('images').addEventListener('click', (e) =>{ 
-        console.log(e.target.tagName);
-        let removeit = e.target.parentNode
-        if (e.target.tagName === 'IMG') {
-            removeit.parentNode.removeChild(removeit)
-        }
-    }, false)
+    // document.getElementById('images').addEventListener('click', (e) =>{ 
+    //     console.log(e.target.tagName);
+    //     let removeit = e.target.parentNode
+    //     if (e.target.tagName === 'IMG') {
+    //         removeit.parentNode.removeChild(removeit)
+    //     }
+    // }, false)
 
     // document.getElementById('owl').addEventListener('click', (e) => {
     //     console.log("owl")
     //     e.stopPropagation() to stop the bubble propogration 
     //     , false})
 
-    document.getElementById('owl').addEventListener('click', (e) => {
-        console.log(e.target.parentNode)
-        // let removeit = e.target.parentNode
-        // removeit.remove()
-        },false);
+    // document.getElementById('owl').addEventListener('click', (e) => {
+    //     // console.log(e.timeStamp)
+    //     // let removeit = e.target.parentNode
+    //     // removeit.remove()
+    //     //  to get the timestamps Since the function has started started
+    //     // console.log((e.timeStamp))
+        
+    //     },false);
 
-    document.getElementById("google").addEventListener('click', (e) => {
-        e.preventDefault();
-        console.log('Clicked on google')
-    }, false)
+    // document.getElementById("google").addEventListener('click', (e) => {
+    //     e.preventDefault()
+    //     console.log('Clicked on google')
+    // }, false);
+    
+
+
 </script>
 </html>

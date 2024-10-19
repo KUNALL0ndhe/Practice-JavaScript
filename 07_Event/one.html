@@ -33,12 +33,12 @@
     //     e.stopPropagation() to stop the bubble propogration 
     //     , false})
 
-    document.getElementById('images').addEventListener('click', (e) => {
-        // console.log("owl")
+    // document.getElementById('images').addEventListener('click', (e) => {
+    //     // console.log("owl")
         
-        console.log(e.currentTarget.getAttribute('id'),"Current Target")
-        console.log(e.target.getAttribute('id'),"main target")
-        , false})
+    //     console.log(e.currentTarget.getAttribute('id'),"Current Target")
+    //     console.log(e.target.getAttribute('id'),"main target")
+    //     , false})
 
     // document.getElementById('owl').addEventListener('click', (e) => {
     //     // console.log(e.timeStamp)
@@ -54,19 +54,27 @@
     //     console.log('Clicked on google')
     // }, false)
 
-    document.getElementById("google").addEventListener('click', (e) => {
-        e.preventDefault();
-        e.target
-        console.log(e.target)
-    }, false);
+    // document.getElementById("google").addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     e.target
+    //     console.log(e.target)
+    // }, false);
 
-    document.addEventListener( "mousemove",(e) => {
+    // document.addEventListener( "mousemove",(e) => {
 
-        let p = document.createElement('p')
-        document.querySelector('#images').appendChild(p);
-        p.innerHTML = ` 
-        screenX : ${e.screenX}, screenY: ${e.screenY},
-        clientX: ${e.clientX}, clientY: ${e.clientY}`
+    //     let p = document.createElement('p')
+    //     document.querySelector('#images').appendChild(p);
+    //     p.innerHTML = ` 
+    //     screenX : ${e.screenX}, screenY: ${e.screenY},
+    //     clientX: ${e.clientX}, clientY: ${e.clientY}`
+    // })
+
+    // document.addEventListener('keydown', ( (e) => {
+    //     console.log(e.key)
+    // }))
+
+    document.addEventListener('keydown' , (e) => {
+        console.log(`alt key is pressed: ${e.altKey}`)
     })
 
     document.addEventListener('keydown', ( (e) => {

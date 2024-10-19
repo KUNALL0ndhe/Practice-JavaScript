@@ -73,10 +73,13 @@
     //     console.log(e.key)
     // }))
 
+    // document.addEventListener('keydown' , (e) => {
+    //     console.log(`alt key is pressed: ${e.ctrlKey}`)
+    // })
     document.addEventListener('keydown' , (e) => {
-        console.log(`alt key is pressed: ${e.altKey}`)
+        console.log(`keyCode key is pressed: ${e.keyCode}`)
     })
-
+    
     document.addEventListener('keydown', ( (e) => {
         console.log(e.key)
     }))

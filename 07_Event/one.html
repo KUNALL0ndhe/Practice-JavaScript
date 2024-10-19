@@ -33,6 +33,13 @@
     //     e.stopPropagation() to stop the bubble propogration 
     //     , false})
 
+    document.getElementById('images').addEventListener('click', (e) => {
+        // console.log("owl")
+        
+        console.log(e.currentTarget.getAttribute('id'),"Current Target")
+        console.log(e.target.getAttribute('id'),"main target")
+        , false})
+
     // document.getElementById('owl').addEventListener('click', (e) => {
     //     // console.log(e.timeStamp)
     //     // let removeit = e.target.parentNode
@@ -45,9 +52,13 @@
     // document.getElementById("google").addEventListener('click', (e) => {
     //     e.preventDefault()
     //     console.log('Clicked on google')
-    // }, false);
-    
+    // }, false)
 
+    document.getElementById("google").addEventListener('click', (e) => {
+        e.preventDefault();
+        e.target
+        console.log(e.target)
+    }, false)
 
 </script>
 </html>

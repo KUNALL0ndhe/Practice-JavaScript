@@ -6,6 +6,10 @@ class User {
     callMe () {
         return `This is the UserName : ${this.username}`
     }
+
+    static createdId () {
+        console.log(`123 ${this.username}`) // statocs makes it private and hence it cannot inheritated nor acces by instance of same class
+    }
 };
 
 class Teacher extends User {
@@ -23,11 +27,13 @@ class Teacher extends User {
 };
 
 const Kunal = new User("KUNAL VINOD LONDHE");
-console.log(Kunal.callMe());
+// console.log(Kunal.callMe());
+// Kunal.createdId();
 
 const Children = new Teacher("kunal",'email.com',12345);
+Children.createdId()
 
-Children.addCourse();
+// Children.addCourse();
 
 console.log(Children instanceof Teacher); // level 1
 console.log(Kunal instanceof User ); // level 2

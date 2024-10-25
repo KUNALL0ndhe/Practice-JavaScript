@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical & Closure</title>
+</head>
+<body style="background-color: black;">
+  <Button id="orange">Orange</Button>
+  <button id="green">Green</button>
+
+</body>
+<script>
+    function Outer (){
+let name  = 'Kunal'
+function Inner(){
+    console.log(`My name is ${name}`);
+}
+Inner();
+};
+Outer();
+
+function changeColor(color){
+    return function () {
+        document.body.style.backgroundColor = `${color}`
+    }
+}
+
+document.getElementById('orange').addEventListener('click', changeColor("orange"));
+document.getElementById('green').addEventListener('click', changeColor("green"));
+</script>
+</html>

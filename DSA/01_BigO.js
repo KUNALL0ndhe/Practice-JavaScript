@@ -8,4 +8,4 @@ const summAll = function (num) {
     return num
 };
 
-summAll(6)
+summAll(6);

@@ -33,17 +33,24 @@ const twoSums = (nums, target) => {
 
 let student = ["John", "Jane" , "jenny" , "jessi" , "ram"];
 
-function findStudent (allStudents , studentName) {
-    allStudents.map( (stud) =>  {
-        if (stud === studentName) 
-        {
-            console.log(`found it ${stud}`)
-        return stud;
-        }
-        else 
-        console.log(`no result found`)
-        } 
-);
-};
+// function findStudent (allStudents , studentName) {
+//     allStudents.map( (stud) =>  {
+//         if (stud === studentName) 
+        
+//             console.log(`found it ${stud}`)
+//         return stud;
+        
+//         } 
+// );
+// return null
+// };
 
-findStudent(student , "jessi")
+function findStudent (allStudents, studentName) {
+    for ( i = 0; i <= studentName.length ; i++) {
+        if ( allStudents[i] === studentName ) {
+            return `Found it ${studentName} at index ${i}`
+        }
+    }
+}
+
+console.log(findStudent(student , "jessi"))

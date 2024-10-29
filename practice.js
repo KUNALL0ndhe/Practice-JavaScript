@@ -29,4 +29,21 @@ const twoSums = (nums, target) => {
     return null;
 };
 
-twoSums(nums,target)
+// twoSums(nums,target)
+
+let student = ["John", "Jane" , "jenny" , "jessi" , "ram"];
+
+function findStudent (allStudents , studentName) {
+    allStudents.map( (stud) =>  {
+        if (stud === studentName) 
+        {
+            console.log(`found it ${stud}`)
+        return stud;
+        }
+        else 
+        console.log(`no result found`)
+        } 
+);
+};
+
+findStudent(student , "jessi")

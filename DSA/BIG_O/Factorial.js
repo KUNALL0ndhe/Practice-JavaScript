@@ -24,3 +24,7 @@ const Factorial = (n) => {
  console.log(reverseFactorial(5))
  console.log('----------------');
  console.log(Factorial(5))
+
+
+ // loop BIG o(n);
+ 

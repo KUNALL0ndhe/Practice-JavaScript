@@ -21,3 +21,14 @@ const sumAll = (num) => {
 };
 
 console.log(sumAll(6));
+
+
+/**
+ * 
+ * BIG - O Guide.
+ * calculate not dependent on input size - o(1)
+ *  1)  loop - O(n)
+ *  2)  nested Loop - O(n^2);
+ *  3)  input size reduced by half - O(logn)
+ * 
+ */
